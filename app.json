@@ -2,10 +2,12 @@
   "expo": {
     "name": "sabor-digital-app",
     "slug": "sabor-digital-app",
+    "scheme": "sabordigital",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": ["expo-router"],
     "ios": {
       "supportsTablet": true
     },
@@ -18,7 +20,15 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar"
+    ]
   }
 }
